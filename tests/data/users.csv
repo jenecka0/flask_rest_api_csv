@@ -1,0 +1,5 @@
+id;name;last_name;description;employee
+1;root;Super User;senior;True
+3;theremin;termenvox;tool;False
+2;user-1;First User;developer;True
+4;user-2;Second User;junior_developer;True
