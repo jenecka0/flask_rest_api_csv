@@ -15,14 +15,13 @@ setup_app(app, DEFAULT_DATA_FILE_PATH)
 
 
 @app.route('/', methods=['GET'])
-def get_user():
-    users = read_all_users_from_csv_file(app)
+def health():
 
     return "OK", 200
 
 
 @app.route(API_PREFIX + '/users', methods=['GET'])
-def health():
+def get_user():
     users = read_all_users_from_csv_file(app)
 
     return jsonify(users)
